@@ -571,7 +571,7 @@ export default function Home() {
             </button>
             <div className="rounded-lg bg-white p-2">
               <QRCodeSVG
-                value="https://portfolio-v5-main.vercel.app/"
+                value="https://raju-manur-portfolio.vercel.app/"
                 size={200}
                 level="H"
                 includeMargin={false}

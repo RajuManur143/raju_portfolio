@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/api/',
         },
-        sitemap: 'https://rajumanur.vercel.app/sitemap.xml',
+        sitemap: 'https://raju-manur-portfolio.vercel.app/sitemap.xml',
     }
 }

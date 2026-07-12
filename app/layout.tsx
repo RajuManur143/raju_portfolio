@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://rajumanur.vercel.app/",
+    url: "https://raju-manur-portfolio.vercel.app/",
     title: "Raju Manur | Java Full Stack Developer",
     description:
       "Java Full Stack Developer focused on backend systems, REST APIs, databases, and modern frontend experiences.",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  metadataBase: new URL("https://rajumanur.vercel.app"),
+  metadataBase: new URL("https://raju-manur-portfolio.vercel.app"),
   alternates: {
     canonical: "/",
   },
