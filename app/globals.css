@@ -1,0 +1,330 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@variant dark (&:where(.dark, .dark *));
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --context-card-border: hsla(0, 0%, 92%, 1);
+  --ds-blue-100: oklch(97.32% 0.0141 251.56);
+  --ds-blue-900: oklch(53.18% 0.2399 256.9900584162342);
+  --ds-red-100: oklch(96.5% 0.0223 13.09);
+  --ds-red-900: oklch(54.99% 0.232 25.29);
+  --ds-amber-100: oklch(97.48% 0.0331 85.79);
+  --ds-amber-900: oklch(52.79% 0.1496 54.65);
+  --ds-gray-100: hsla(0, 0%, 95%, 1);
+  --ds-gray-1000: hsla(0, 0%, 9%, 1);
+  --ds-gray-alpha-400: hsla(0, 0%, 0%, 0.08);
+  --ds-background-100: hsla(0, 0%, 100%, 1);
+  --ds-red-800: oklch(58.19% 0.2482 25.15);
+  --ds-blue-700: oklch(57.61% 0.2508 258.23);
+  --ds-amber-800: oklch(77.21% 0.1991 64.28);
+  --ds-amber-850: hsl(33, 96%, 42%);
+  --ds-gray-400: hsla(0, 0%, 92%, 1);
+  --ds-gray-700: hsla(0, 0%, 56%, 1);
+  --ds-gray-1000-h: hsl(0, 0%, 22%);
+  --ds-gray-alpha-200: hsla(0, 0%, 0%, 0.08);
+  --ds-focus-color: var(--ds-blue-700);
+  --ds-focus-ring: 0 0 0 2px var(--ds-background-100), 0 0 0 4px var(--ds-focus-color);
+  --ds-shadow-border: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  --ds-shadow-small: 0px 2px 2px rgba(0, 0, 0, 0.04);
+  --ds-shadow-border-small: var(--ds-shadow-border), var(--ds-shadow-small);
+  --ds-contrast-fg: #ffffff;
+  --geist-background: #fff;
+  --ds-shadow-menu: var(--ds-shadow-border), 0px 1px 1px rgba(0, 0, 0, 0.02), 0px 4px 8px -4px rgba(0, 0, 0, 0.04), 0px 16px 24px -8px rgba(0, 0, 0, 0.06);
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+  --context-card-border: hsla(0, 0%, 18%, 1);
+  --ds-blue-100: oklch(22.17% 0.069 259.89);
+  --ds-blue-900: oklch(71.7% 0.1648 250.79360374054167);
+  --ds-red-100: oklch(22.1% 0.0657 15.11);
+  --ds-red-900: oklch(69.96% 0.2136 22.03);
+  --ds-amber-100: oklch(22.46% 0.0538 76.04);
+  --ds-amber-900: oklch(77.21% 0.1991 64.28);
+  --ds-gray-100: hsla(0, 0%, 10%, 1);
+  --ds-gray-1000: hsla(0, 0%, 93%, 1);
+  --ds-gray-alpha-400: hsla(0, 0%, 100%, 0.14);
+  --ds-background-100: hsla(0,0%,4%, 1);
+  --ds-red-800: oklch(58.01% 0.227 25.12);
+  --ds-blue-700: oklch(57.61% 0.2321 258.23);
+  --ds-amber-800: oklch(77.21% 0.1991 64.28);
+  --ds-gray-400: hsla(0, 0%, 18%, 1);
+  --ds-gray-700: hsla(0, 0%, 56%, 1);
+  --ds-gray-1000-h: hsl(0, 0%, 80%);
+  --ds-gray-alpha-200: hsla(0, 0%, 100%, 0.09);
+  --ds-shadow-border: 0 0 0 1px rgba(255, 255, 255, 0.145);
+  --ds-shadow-small: 0px 1px 2px rgba(0, 0, 0, 0.16);
+  --ds-shadow-border-small: var(--ds-shadow-border), 0px 1px 2px rgba(0, 0, 0, 0.16);
+  --geist-background: #000;
+  --ds-shadow-menu: var(--ds-shadow-border), 0px 1px 1px rgba(0, 0, 0, 0.02), 0px 4px 8px -4px rgba(0, 0, 0, 0.04), 0px 16px 24px -8px rgba(0, 0, 0, 0.06);
+}
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-dm-sans);
+  --color-context-card-border: var(--context-card-border);
+  --animate-fade-spin: fade-spin 1.2s linear infinite;
+  --color-red-800: var(--ds-red-800);
+  --color-red-900: var(--ds-red-900);
+  --color-amber-800: var(--ds-amber-800);
+  --color-amber-850: var(--ds-amber-850);
+  --color-gray-100: var(--ds-gray-100);
+  --color-gray-400: var(--ds-gray-400);
+  --color-gray-700: var(--ds-gray-700);
+  --color-gray-1000: var(--ds-gray-1000);
+  --color-gray-1000-h: var(--ds-gray-1000-h);
+  --color-gray-alpha-200: var(--ds-gray-alpha-200);
+  --color-gray-alpha-400: var(--ds-gray-alpha-400);
+  --color-background-100: var(--ds-background-100);
+  --shadow-focus-ring: var(--ds-focus-ring);
+  --shadow-border-small: var(--ds-shadow-border-small);
+  --color-blue-700: var(--ds-blue-700);
+  --color-contrast-fg: var(--ds-contrast-fg);
+  --color-geist-background: var(--geist-background);
+  --shadow-menu: var(--ds-shadow-menu);
+  @keyframes fade-spin {
+  0% {
+    opacity: 0.15;
+    }
+  100% {
+    opacity: 1;
+    }
+  }
+}
+
+
+html,
+body {
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Edge */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-dm-sans), sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  overflow-y: scroll; /* keep layout stable, without visible bar */
+}
+
+/* Cinematic UI Refinements */
+button,
+a.button-link,
+[role="button"] {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              background-color 0.3s ease,
+              border-color 0.3s ease,
+              color 0.3s ease,
+              box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+button:hover,
+a.button-link:hover,
+[role="button"]:hover {
+  transform: scale(1.03) translateY(-1px);
+}
+
+
+/* Improved typography hierarchy */
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+}
+
+h3 {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+/* Better spacing for sections */
+section {
+  scroll-margin-top: 2rem;
+}
+
+/* Improved card hover effects */
+.group:hover .group-hover\:scale-105 {
+  transform: scale(1.05);
+}
+
+/* Better focus states */
+.focus-visible:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 2px;
+}
+
+/* --- Shimmer Stroke Effect --- */
+@keyframes shimmer-circular {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.hover-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-shimmer::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150vmax;
+  height: 150vmax;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0%,
+    transparent 42%,
+    var(--foreground) 50%,
+    transparent 58%,
+    transparent 100%
+  );
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: shimmer-circular 5s linear infinite;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hover-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 1.5px;
+  border-radius: inherit;
+  background: var(--background);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hover-shimmer > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hover-shimmer:hover::before {
+  opacity: 0.6;
+}
+
+@keyframes shimmer-circular {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* --- Text Pop-Out Effect --- */
+.text-pop-out {
+  display: inline-block;
+  cursor: default;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              letter-spacing 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              text-shadow 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.text-pop-out:hover {
+  transform: translateY(-4px) scale(1.04);
+  letter-spacing: 0.04em;
+  text-shadow:
+    0 1px 0 rgba(0,0,0,0.15),
+    0 2px 0 rgba(0,0,0,0.12),
+    0 3px 0 rgba(0,0,0,0.10),
+    0 4px 0 rgba(0,0,0,0.08),
+    0 5px 0 rgba(0,0,0,0.06),
+    0 6px 8px rgba(0,0,0,0.12),
+    0 8px 20px rgba(0,0,0,0.10);
+}
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 30s linear infinite;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Native scrollbar fully hidden — custom React scrollbar handles this */
+
+/* --- Spotlight Animation --- */
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
+  }
+}
+
+.animate-spotlight {
+  animation: spotlight 2s ease .75s 1 forwards;
+}
+
+/* Optimized cinematic noise overlay replacing heavy full-screen SVG filter */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* --- TBT Fix: Disable 366 individual SVG rect animations from react-activity-calendar ---
+   The loading skeleton animates fill on every single rect, which blocks the main thread.
+   We replace it with a single GPU-accelerated container-level fade-in. */
+.react-activity-calendar--loading rect {
+  animation: none !important;
+}
+
+.react-activity-calendar {
+  contain: layout style;
+  animation: calendarFadeIn 0.5s ease-out forwards;
+}
+
+@keyframes calendarFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Accessibility: prefers-reduced-motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *:not(.hover-shimmer),
+  *:not(.hover-shimmer)::before,
+  *:not(.hover-shimmer)::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

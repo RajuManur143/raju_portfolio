@@ -1,0 +1,63 @@
+# Raju
+/ˈrɑːdʒu/ • noun
+
+## About
+
+Passionate Java Full Stack Developer focused on problem-solving, clean coding, backend systems, REST APIs, data modeling, and modern frontend experiences.
+
+## Experience
+
+### Java Full Stack Developer Intern
+**Bengaluru, India | Remote**
+January 2025 – Present
+
+- Built RESTful APIs with Spring Boot, JPA, and MySQL for scalable business solutions.
+- Developed responsive frontend modules using React.js and modern CSS.
+- Applied object-oriented design and database optimization practices in real projects.
+
+### Software Development Intern
+**Bengaluru, India | Hybrid**
+June 2024 – December 2024
+
+- Contributed to full-stack development tasks using Java, Spring MVC, and React.js.
+- Worked with Git/GitHub for collaborative development and code review.
+- Improved application reliability through structured debugging and testing.
+
+## Projects
+
+### JanaAushadhi
+**Java, Spring Boot, React.js, MySQL** | 2025
+
+- Built a full-stack generic medicine discovery platform with search, category browsing, and admin workflows.
+- Designed backend services and REST APIs to handle product and user data securely.
+- Delivered a responsive UI with a maintainable architecture for future scaling.
+
+### Where Is My Bus
+**Java, Spring Boot, React.js, REST APIs** | 2024
+
+- Built a real-time transit tracking system for commuter-friendly route visibility.
+- Integrated backend services with responsive frontend components for clear travel information.
+- Focused on modular development and practical product usability.
+
+## Education
+
+### Visvesvaraya Technological University (VTU)
+**Bachelor of Engineering (Computer Science and Engineering)**
+CGPA: 9.15
+
+## Skills
+
+**Backend:** Java, Spring Boot, Spring MVC, Hibernate, JPA, REST APIs, Microservices
+**Frontend:** HTML5, CSS3, JavaScript, React.js
+**Database & Tools:** MySQL, SQL, Git, GitHub, Maven, Docker, Linux, OOP, Data Structures & Algorithms
+
+## Get in Touch
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/rajumanur/) or shoot an [email](mailto:your-rajumanur343@gmail.com)
+
+---
+
+**Links:**
+- Email: your-rajumanur343@gmail.com
+- LinkedIn: https://www.linkedin.com/in/rajumanur/
+- GitHub: https://github.com/RajuManur143/
